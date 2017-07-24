@@ -60,6 +60,9 @@
       <TestFile>
         <Path>CommonScenarios\CommonScenarios.sstest</Path>
       </TestFile>
+      <TestFile>
+        <Path>README.md</Path>
+      </TestFile>
     </TestFiles>
   </TestFiles>
   <CustomStrings />

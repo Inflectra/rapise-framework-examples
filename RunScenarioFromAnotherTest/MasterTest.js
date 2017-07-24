@@ -3,11 +3,11 @@
 
 function Test()
 {
-    // Run login from JavaScript
+    // Run Login from JavaScript
 	Global.DoLoadObjects('./CommonScenarios/CommonScenarios.objects.js');
-	LoginPage_Login("diana", "pd1");
+	Login("diana", "pd1");
 
-	// Run login from RVL
+	// Run Login from RVL
 	RVL.DoPlayScript();
 }
 
