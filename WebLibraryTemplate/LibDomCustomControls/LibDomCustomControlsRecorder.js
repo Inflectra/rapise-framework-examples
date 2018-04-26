@@ -77,7 +77,7 @@ function DomCustomControlsPluginAttach(browser, actionHolder)
 			var res = {
 				cancel: false,
 				object_flavor: 'Grid',
-				object_name: _getName(root)',
+				object_name: _getName(root),
 				object_type: 'DomCustomGrid',
 				description: 'TODO Action description',
 				locator_data: 
