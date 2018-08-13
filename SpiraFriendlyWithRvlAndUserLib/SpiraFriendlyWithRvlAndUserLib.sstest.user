@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserSettings>
+  <ArrayOfFlexDictionaryEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <FlexDictionaryEntry name="TestTree" type="SmarteStudio.Test.FlexDictionary">
+      <FlexDictionary>
+        <ArrayOfFlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\SpiraFriendlyWithRvlAndUserLib.sstest.Test" type="System.Boolean">
+            <boolean>true</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\SpiraFriendlyWithRvlAndUserLib.sstest.Test.Scripts" type="System.Boolean">
+            <boolean>true</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\SpiraFriendlyWithRvlAndUserLib.sstest.Test.Application" type="System.Boolean">
+            <boolean>true</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\SpiraFriendlyWithRvlAndUserLib.sstest.Test.Lib" type="System.Boolean">
+            <boolean>true</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\SpiraFriendlyWithRvlAndUserLib.sstest.Test.Lib.LibCommonUtils" type="System.Boolean">
+            <boolean>true</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\SpiraFriendlyWithRvlAndUserLib.sstest.Test.Reports" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Analog" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Data Files" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Control" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.Common" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.Common.HTML" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.Common.Spreadsheet" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibActiveX" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibActiveXC1" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibActiveXSft" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibAdvanced_AAC" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibAutoDetect" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibChrome" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibConsole" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDevExpress" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomDynamicsAX" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomDynamicsCrm" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomDynamicsNAV" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomGwt" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomGwtExt" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomHTML5" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomJQuery" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomSalesforce" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomSmartGwt" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomSpira" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDomYui" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDynamicsAX" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibDynamicsNAV" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibFarPoint" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibFirefox" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibFirefox2" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibGeneric" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibIE" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibInfragistics" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibJava" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibManaged" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibMobile" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibMSOffice" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibQt" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibSelenium" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibSWT" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibSyncfusion" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibTelerik" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibUIAutomation" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibUser" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibVB6" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibVerifyRules" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibVSFlexGrid" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Lib.LibWebService" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Loggers" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Loggers.TAP" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.Loggers.TAP.Test" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.PlugIns" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.PlugIns.GDI" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.PlugIns.Grid" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.PlugIns.ImageFinder" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Engine.RVL" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Reports" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\work\Rapise\Rapise\Core\Engine\Engine.sstest.Engine Core.Scripts" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\TestAddition\TestAddition.sstest.Test" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\TestAddition\TestAddition.sstest.Test.Scripts" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\TestSubtraction\TestSubtraction.sstest.Test" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\TestSubtraction\TestSubtraction.sstest.Test.Scripts" type="System.Boolean">
+            <boolean>true</boolean>
+          </FlexDictionaryEntry>
+        </ArrayOfFlexDictionaryEntry>
+      </FlexDictionary>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="DebugWatches" type="SmarteStudio.Test.StringList">
+      <ArrayOfString>
+        <string>c</string>
+        <string>str.charCodeAt(i)</string>
+      </ArrayOfString>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="OpenDocuments" type="SmarteStudio.Test.StringList">
+      <ArrayOfString>
+        <string>c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\Lib\LibCommonUtils\LibCommonUtils.js</string>
+        <string>c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\SpiraFriendlyWithRvlAndUserLib.rvl.xlsx</string>
+        <string>c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\TestAddition\TestAddition.rvl.xlsx</string>
+        <string>c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\TestSubtraction\TestSubtraction.rvl.xlsx</string>
+        <string>c:\work\rapise-framework-examples\SpiraFriendlyWithRvlAndUserLib\Reports\SpiraFriendlyWithRvlAndUserLib_2018-08-13_20-04.trp</string>
+      </ArrayOfString>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="Status" type="SmarteStudio.Test.FlexDictionary">
+      <FlexDictionary>
+        <ArrayOfFlexDictionaryEntry>
+          <FlexDictionaryEntry name="Status" type="System.String">
+            <string>Fail</string>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="Pass" type="System.Int32">
+            <int>20</int>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="Fail" type="System.Int32">
+            <int>0</int>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="Unresolved" type="System.Int32">
+            <int>2</int>
+          </FlexDictionaryEntry>
+        </ArrayOfFlexDictionaryEntry>
+      </FlexDictionary>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="Files" type="SmarteStudio.Test.FlexDictionary">
+      <FlexDictionary>
+        <ArrayOfFlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\spirafriendlywithrvlanduserlib\spirafriendlywithrvlanduserlib.rvl.xlsx" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Row" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Col" type="System.Int32">
+                  <int>3</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\spirafriendlywithrvlanduserlib\lib\libcommonutils.jslib" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\spirafriendlywithrvlanduserlib\lib\libcommonutils\libcommonutils.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>1</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>13</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise\rapise\core\engine\rvl\rvl.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>2</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>298</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise\rapise\core\engine\sesspreadsheetobject.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>12</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>45</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\spirafriendlywithrvlanduserlib\spirafriendlywithrvlanduserlib.user.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise-framework-examples\spirafriendlywithrvlanduserlib\testsubtraction\testsubtraction.objects.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise\rapise\core\engine\lib\libuiautomation\uiautomationtextbox.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>2</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>85</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\rapise\rapise\core\engine\sesglobal.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>3</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>636</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+        </ArrayOfFlexDictionaryEntry>
+      </FlexDictionary>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="Debugger" type="SmarteStudio.Test.FlexDictionary">
+      <FlexDictionary>
+        <ArrayOfFlexDictionaryEntry>
+          <FlexDictionaryEntry name="DebugMode" type="System.String">
+            <string>NoDebugger</string>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="Verbose" type="System.String">
+            <string>1</string>
+          </FlexDictionaryEntry>
+        </ArrayOfFlexDictionaryEntry>
+      </FlexDictionary>
+    </FlexDictionaryEntry>
+  </ArrayOfFlexDictionaryEntry>
+</UserSettings>
