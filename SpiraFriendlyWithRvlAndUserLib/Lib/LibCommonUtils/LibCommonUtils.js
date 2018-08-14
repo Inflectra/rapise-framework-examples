@@ -2,6 +2,7 @@
 
 function TestPrepare()
 {
+	Global.DoLoadObjects('%WORKDIR%/SpiraFriendlyWithRvlAndUserLib.objects.js');
 	Global.DoLoadObjects('%WORKDIR%/TestAddition/TestAddition.objects.js');
 	Global.DoLoadObjects('%WORKDIR%/TestSubtraction/TestSubtraction.objects.js');
 
