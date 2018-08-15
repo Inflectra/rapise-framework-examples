@@ -1,15 +1,15 @@
 # Sample Spira-Friendly Framework with Multiple RVLs and Common Library
 
-This framework uses several concepts of Rapise intended to simplify framework development and design.
+This framework uses several concepts of [Rapise](http://www.inflectra.com/Rapise/) intended to simplify framework development and design.
 
-By following the suggested design you should get the following benefits:
+If you follow  the suggested design then you should get the following benefits:
 
 * Common functionality shared among all tests in the framework
 * Easy sharing objects between sub-tests
-* TestPrepare tab for operations performed before any of the tests is executed
-* TestFinish tab for functionality finalizing each of the tests
+* `TestPrepare` tab for operations performed before any of the tests is executed
+* `TestFinish` tab for functionality finalizing each of the tests
 * Ability to work with each sub-test separately
-* Easy way to execute any piece of any sub-test
+* Easy way to execute any piece of any RVL
 
 
 Let's elaborate these features one-by-one. But first, let's describe and Application Under Test and Test Framework design.
@@ -20,7 +20,7 @@ Our AUT is a trivial Calculator application.
 
 ![AUT](Images/AUT_Calculator.png)
 
-Our goal is to implement data driven testing framework. 
+Our goal is to implement the data driven testing framework and have these features: 
 1. Primary goal is to have tests for Addition and Subtraction. 
 2. Framework should be flexible. Later it should be easy to add more tests for other operations (multiplication, division, square root).
 3. The test set should be locale-neutral. Calculator displays output in locale-specific manner (so, depending on it the result of `9999+1` may be printed as `10000`, `10 000`, `10 000.0`, `10 000,0`, `10.000,0`). We need a function that reads the result of calculation (`GetCalcResult`). This function should be accessible from any test.
