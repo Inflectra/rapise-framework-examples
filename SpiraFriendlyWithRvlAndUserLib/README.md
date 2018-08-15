@@ -160,7 +160,7 @@ In the beginning of test execution:
 function TestPrepare()
 {
   ...
-	RVL.DoPlaySpecial('%WORKDIR%/SpiraFriendlyWithRvlAndUserLib.rvl.xlsx', "TestPrepare");
+	RVL.DoPlayScript('%WORKDIR%/SpiraFriendlyWithRvlAndUserLib.rvl.xlsx', "TestPrepare");
   ...
 }
 ````
@@ -179,6 +179,8 @@ function TestFinish()
 
 Call this one:
 ![TestPrepare Sheet](Images/TestFinish.png)
+
+`TestFinish` uses `RVL.DoPlaySpecial`. This is an analog of `RVL.DoPlayScript` but it does not run RVL in so called *special* mode. *Special* modes are `Play from Here', 'Play Selection' and 'Play this Sheet'. We don't want calculator to be closed in such cases so that we can run script steps one by one.
 
 These sheets are defined in the RVL of the framework root test. However they are executed when you run any of the test cases.
 

@@ -6,7 +6,7 @@ function TestPrepare()
 	Global.DoLoadObjects('%WORKDIR%/TestAddition/TestAddition.objects.js');
 	Global.DoLoadObjects('%WORKDIR%/TestSubtraction/TestSubtraction.objects.js');
 
-	RVL.DoPlaySpecial('%WORKDIR%/SpiraFriendlyWithRvlAndUserLib.rvl.xlsx', "TestPrepare");
+	RVL.DoPlayScript('%WORKDIR%/SpiraFriendlyWithRvlAndUserLib.rvl.xlsx', "TestPrepare");
 }
 
 
