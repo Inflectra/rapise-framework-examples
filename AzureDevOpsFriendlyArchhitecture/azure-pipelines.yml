@@ -1,0 +1,34 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  name: 'default'
+
+steps:
+
+- script: |
+    echo Running tests...
+    tap --no-coverage --test-arg="{'g_browserLibrary':'Chrome HTML'}"
+  displayName: 'Execute Tests'
+  continueOnError: true
+
+- script: |
+    call tap2xunit.cmd
+  displayName: "Convert TAP to XUnit"
+
+- script: |
+    cscript.exe fixunit.js
+  displayName: 'Fix XUnit Reports'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'results/*.xml'
+    testRunTitle: 'Basic Tests'
+    failTaskOnFailedTests: true
+
