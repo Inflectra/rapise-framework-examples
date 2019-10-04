@@ -39,6 +39,7 @@ function fix(fName, name)
 	{
 		var tc = tcs[i];
         var tname = GetAttribute(tc, "name");
+        SetAttribute(tc, "classname", tname);
         if (tname == name)
         {
             var ts = xmlDoc.selectSingleNode("//testsuite");
