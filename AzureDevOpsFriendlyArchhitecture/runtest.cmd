@@ -3,7 +3,10 @@ If /I "%Processor_Architecture%" NEQ "x86" (
 %SystemRoot%\SysWoW64\cmd.exe /C %0 %*
 goto :eof
 )
-set SES_ENGINE_HOME=C:\Program Files (x86)\Inflectra\Rapise\Engine
+If not defined SES_ENGINE_HOME (
+    set "SES_ENGINE_HOME=C:\Program Files (x86)\Inflectra\Rapise\Engine"
+)
+echo SES_ENGINE_HOME is set to %SES_ENGINE_HOME%
 SET SMARTESTUDIO_TEST_FOLDER=%~dp0%1
 pushd "%SMARTESTUDIO_TEST_FOLDER%"
 echo --------------------------------
