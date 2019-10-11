@@ -4,7 +4,7 @@
   <UserFunctionsPath>User.js</UserFunctionsPath>
   <ObjectsPath>Objects.js</ObjectsPath>
   <ReportPath>LIS_REACT.trp</ReportPath>
-  <CommandInterval>1000</CommandInterval>
+  <CommandInterval>100</CommandInterval>
   <IterationsCount>1</IterationsCount>
   <StopOnError>true</StopOnError>
   <CacheObjects>false</CacheObjects>
@@ -25,7 +25,16 @@
     <IsFilterGroup>false</IsFilterGroup>
     <FilterWildcard>*.*</FilterWildcard>
     <FilterPath />
-    <Groups />
+    <Groups>
+      <TestGroup>
+        <Name>Reports</Name>
+        <IsFilterGroup>true</IsFilterGroup>
+        <FilterWildcard>*.trp</FilterWildcard>
+        <FilterPath>Reports</FilterPath>
+        <Groups />
+        <TestFiles />
+      </TestGroup>
+    </Groups>
     <TestFiles>
       <TestFile>
         <Path>Main.js</Path>
