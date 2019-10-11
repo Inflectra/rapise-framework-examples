@@ -1,1 +1,1 @@
-Folder for test run results in XUnit format
+Folder for test run results in XUnit format.

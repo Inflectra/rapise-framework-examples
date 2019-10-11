@@ -1,0 +1,1 @@
+Patch for Note Tap parallel execution in Rapise 6.2
