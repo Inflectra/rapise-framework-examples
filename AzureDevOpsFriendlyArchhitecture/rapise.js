@@ -81,10 +81,12 @@ module.exports =
         
         var tapFile = path.resolve("./" + testName + "/last.tap");
         var trpFile = path.resolve("./" + testName + "/" + testName + ".trp");
+        var outFile = path.resolve("./" + testName + "/out.log");
         _removeFile(tapFile);
         _removeFile(trpFile);
+        _removeFile(outFile);
         
-        var cmdLine = "node ./node_modules/rapisenode/Player.Node.js ./" + testName + "/node.json"; //(params != null ? " \"-eval:g_testSetParams=" + params +"\"": "");
+        var cmdLine = "node ./node_modules/rapisenode/Player.Node.js ./" + testName + "/node.json" + " > ./" + testName + "/out.log" ; //(params != null ? " \"-eval:g_testSetParams=" + params +"\"": "");
         console.log(cmdLine);
         var env = JSON.parse(JSON.stringify(process.env));
         var child = exec(cmdLine, {env:env, maxBuffer: 200*1024*1024, shell:true});
@@ -99,6 +101,11 @@ module.exports =
             {
                 var dst = path.resolve("./reports/" + testName + ".trp");
                 fs.copyFileSync(trpFile, dst);
+            }
+            if (fs.existsSync(outFile))
+            {
+                var dst = path.resolve("./reports/" + testName + ".log");
+                fs.copyFileSync(outFile, dst);
             }
             callback(exit_code);
         })

@@ -39,11 +39,21 @@ function mkTests(inFolder, fPath)
 
 console.log("preparing for test launch...");
 
-var testFolder = "test";
+var testFolder = "tests";
 mkDir(testFolder);
 mkDir("reports");
 mkDir("results");
 mkFile(testFolder + "/tap-parallel-not-ok");
 mkTests(testFolder, ".");
+
+console.log("Platform: " + process.platform);
+if (process.platform == "darwin")
+{
+    fs.copyFileSync("./Bin/chromedriver_mac64", "./Bin/chromedriver");
+}
+else if (process.platform == "linux")
+{
+    fs.copyFileSync("./Bin/chromedriver_linux64", "./Bin/chromedriver");
+}
 
 console.log("done");
