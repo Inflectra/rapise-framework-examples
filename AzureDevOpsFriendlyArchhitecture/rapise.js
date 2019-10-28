@@ -1,4 +1,6 @@
 var exec = require('child_process').exec;
+var path = require("path");
+var fs = require("fs");
 
 module.exports = 
 {
@@ -66,5 +68,47 @@ module.exports =
         {
             callback(exit_code);
         })
-    }
+    },
+    
+    runWithNode: function(testName, callback)
+    {
+        testName = testName.replace(/.jsx|.js/i, "");
+        var params = null;
+        if (process.argv.length > 2)
+        {
+            params = process.argv[2];
+        }        
+        
+        var tapFile = path.resolve("./" + testName + "/last.tap");
+        var trpFile = path.resolve("./" + testName + "/" + testName + ".trp");
+        _removeFile(tapFile);
+        _removeFile(trpFile);
+        
+        var cmdLine = "rapisenode ./" + testName + "/node.json"; //(params != null ? " \"-eval:g_testSetParams=" + params +"\"": "");
+        console.log(cmdLine);
+        var env = JSON.parse(JSON.stringify(process.env));
+        var child = exec(cmdLine, {env:env, maxBuffer: 200*1024*1024, shell:true});
+        child.on('close', function(exit_code) 
+        {
+            if (fs.existsSync(tapFile))
+            {
+                var dst = path.resolve("./reports/" + testName + ".tap");
+                fs.copyFileSync(tapFile, dst);
+            }
+            if (fs.existsSync(trpFile))
+            {
+                var dst = path.resolve("./reports/" + testName + ".trp");
+                fs.copyFileSync(trpFile, dst);
+            }
+            callback(exit_code);
+        })
+    }, 
+}
+
+function _removeFile(fileName)
+{
+    if (fs.existsSync(fileName))
+    {
+        fs.unlinkSync(fileName);
+    } 
 }

@@ -1,0 +1,15 @@
+{
+	"name": "rapise-test-coverage",
+	"scripts": {
+		"prepare": "node prepare.js",
+		"tap": "tap --no-coverage",
+		"post": "node post.js",
+		"summarize": "node post.js --summarize"
+	},
+	"dependencies": {
+		"rapisenode": "<path to Rapise npm module>",
+		"tap": "^14.8.2",
+		"xmldom": "^0.1.27",
+		"xpath": "0.0.27"
+	}
+}

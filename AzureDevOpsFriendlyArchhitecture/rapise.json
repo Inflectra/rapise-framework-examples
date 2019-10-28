@@ -1,0 +1,4 @@
+{
+    "WebDriverPath": "%TESTROOT%/../Bin",
+    "StudioDataPath": "%TESTROOT%/../Profiles"
+}
