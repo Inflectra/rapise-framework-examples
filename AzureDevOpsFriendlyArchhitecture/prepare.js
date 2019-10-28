@@ -39,7 +39,7 @@ function mkTests(inFolder, fPath)
 
 console.log("preparing for test launch...");
 
-var testFolder = "tests";
+var testFolder = "test";
 mkDir(testFolder);
 mkDir("reports");
 mkDir("results");
