@@ -84,7 +84,7 @@ module.exports =
         _removeFile(tapFile);
         _removeFile(trpFile);
         
-        var cmdLine = "rapisenode ./" + testName + "/node.json"; //(params != null ? " \"-eval:g_testSetParams=" + params +"\"": "");
+        var cmdLine = "node ./node_modules/rapisenode/Player.Node.js ./" + testName + "/node.json"; //(params != null ? " \"-eval:g_testSetParams=" + params +"\"": "");
         console.log(cmdLine);
         var env = JSON.parse(JSON.stringify(process.env));
         var child = exec(cmdLine, {env:env, maxBuffer: 200*1024*1024, shell:true});
