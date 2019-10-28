@@ -24,6 +24,16 @@ steps:
     cscript.exe summarize.js
   displayName: 'Fix XUnit Reports'
 
+- task: CopyFiles@2
+  inputs:
+    contents: 'reports/**'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: TestRunReports
+  
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
