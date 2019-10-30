@@ -69,7 +69,7 @@
     "noProxy": ""
   },
   "Chrome Specific": {
-    "args": "[\"headless\"]",
+    "args": "[\"headless\",\"window-size=1280,720\"]",
     "binary": "",
     "extensions": "",
     "localState": "",
