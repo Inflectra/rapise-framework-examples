@@ -77,6 +77,8 @@ module.exports =
         if (process.argv.length > 2)
         {
             params = process.argv[2];
+            params = params.replace(/'/g, '"');
+            fs.writeFileSync("./" + testName + "/params.json", params);
         }        
         
         var tapFile = path.resolve("./" + testName + "/last.tap");
@@ -86,7 +88,7 @@ module.exports =
         _removeFile(trpFile);
         _removeFile(outFile);
         
-        var cmdLine = "node ./node_modules/rapisenode/Player.Node.js ./" + testName + "/node.json" + " > ./" + testName + "/out.log" ; //(params != null ? " \"-eval:g_testSetParams=" + params +"\"": "");
+        var cmdLine = "node ./node_modules/rapisenode/Player.Node.js ./" + testName + "/node.json" + (params ? " ./" + testName + "/params.json" : "") + " > ./" + testName + "/out.log" ;
         console.log(cmdLine);
         var env = JSON.parse(JSON.stringify(process.env));
         var child = exec(cmdLine, {env:env, maxBuffer: 200*1024*1024, shell:true});
