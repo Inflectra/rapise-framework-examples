@@ -3,6 +3,7 @@
 	"scripts": {
 		"prepare": "node prepare.js",
 		"tap": "tap --no-coverage",
+		"docker": "tap --no-coverage --test-arg=\"{'g_browserLibrary':'Selenium - ChromeDocker'}\"",
 		"post": "node post.js",
 		"summarize": "node post.js --summarize"
 	},
