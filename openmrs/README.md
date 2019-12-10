@@ -24,7 +24,7 @@ We use sub-tests to separate logic. We also group sub-tests based on purpose:
 * `Bricks` -  common building blocks for test scenarios.  In our case it is **Login** and **Logout**. This is very similar to `Utils`, but may contain some validations, so it may stop or break if some side-check is not succeeded). Bricks may use Utils and other bricks.
 * `Scenarios` - actual test scenarios. May use Bricks, Utils and have own logic.
 
-Initially we have 3 scenarios planned `S01_Login` `S02_CreatePatient` `S03_CreateMergePatient`. But only one of them is currently implemented (S03). Please, note that we didn't start from first (S01). We had a planning stage and identified several scenarios worth implementing. The we have chosen one of then that is promising that takes maximum time from manual tester while still easy to implement.
+Initially we have 3 scenarios planned `S01_Login` `S02_CreatePatient` `S03_CreateMergePatient`. But only one of them is currently implemented (S03). Please, note that we didn't start from first (S01). We had a planning stage and identified several scenarios worth implementing. Then we have chosen one of them. It is promising: it takes much time from manual tester while still easy to automate.
 
     It is common mistake to always start implementation of tests from first scenario and then move on. Always think what will bring you more benefits and save maximum time.
 
