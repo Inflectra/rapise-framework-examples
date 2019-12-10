@@ -480,3 +480,5 @@ You may use this demo test, by meeting the following pre-requisites:
     ```
 
 1. Change SpiraTeam credentials in `Config.json`. This will define values returned by `Global.GetProperty` across all tests in the framework.
+
+![Config](img/EditConfig.png)
