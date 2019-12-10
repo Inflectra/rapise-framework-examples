@@ -1,0 +1,22 @@
+{
+	record: 
+	{
+		attributes: [
+			{ name: "id", notEmpty: true, exclude: "\\d" },
+			{ name: "title" },
+			{ name: "name" },
+			{ name: "style" },
+			{ name: "type" },
+			{ name: "placeholder" },
+			{ name: "autocomplete" },
+			{ name: "href" },
+			{ name: "role" }
+		],
+		classes: [
+			/* { name: "content" } */
+		],
+		anchors: [
+			/* { xpath: "//div[@class='content-wrapper']" } */
+		]
+	}
+}

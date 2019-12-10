@@ -1,0 +1,55 @@
+{
+  "WsdlUri": "https://dev-eu.spiraservice.net/Services/v5_0/SoapService.svc?wsdl",
+  "ServiceUri": "https://dev-eu.spiraservice.net/Services/v5_0/SoapService.svc",
+  "UseCustomServiceUri": true,
+  "Credential": null,
+  "SoapTypes": {
+    "SoapService": {
+      "Connection_Authenticate1": {
+        "Headers": {},
+        "Body": {
+          "userName": "fredbloggs",
+          "password": "set_it",
+          "plugInName": "Rapise"
+        }
+      },
+      "Connection_Authenticate": {
+        "Headers": {},
+        "Body": {
+          "userName": "set_it",
+          "password": "PleaseChange"
+        }
+      },
+      "Connection_ConnectToProject": {
+        "Headers": {},
+        "Body": {
+          "projectId": 16,
+          "projectIdSpecified": false
+        }
+      },
+      "Incident_Create": {
+        "Headers": {},
+        "Body": {
+          "remoteIncident": {
+            "ComponentIds": [],
+            "Description": "incident description tbd",
+            "DetectedReleaseVersionNumber": "",
+            "FixedBuildName": "",
+            "IncidentStatusName": "",
+            "IncidentTypeName": "",
+            "Name": "Auto Created Incident",
+            "OpenerName": "",
+            "OwnerName": "",
+            "PriorityName": "",
+            "ProjectName": "",
+            "ResolvedReleaseVersionNumber": "",
+            "SeverityName": "",
+            "TestRunStepIds": [],
+            "VerifiedReleaseVersionNumber": "",
+            "CustomProperties": []
+          }
+        }
+      }
+    }
+  }
+}

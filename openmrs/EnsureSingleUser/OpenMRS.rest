@@ -1,0 +1,188 @@
+{
+  "CurrentRequestName": "findpatient",
+  "CurrentPath": "C:\\Users\\Alexey\\Documents\\My Rapise Tests\\openmrs\\EnsureSingleUser\\OpenMRS.rest",
+  "Name": "OpenMRS.rest",
+  "Requests": [
+    {
+      "Name": "session",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/session",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "Authorization",
+          "Value": "Basic YWRtaW46QWRtaW4xMjM="
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "findperson",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/person?q={PersonName}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "PersonName",
+          "TokenName": "{PersonName}",
+          "Value": "Ashurbanipal Sargonid"
+        }
+      ]
+    },
+    {
+      "Name": "person",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/person/007037a0-0500-11e3-8ffd-0800200c9a66",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "addperson",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/person",
+      "Method": "POST",
+      "Body": "{\r\n  \"names\": [\r\n    {\r\n      \"givenName\": \"Ashurbanipal\",\r\n      \"familyName\": \"Sargonid\"\r\n    }\r\n  ],\r\n  \"gender\": \"M\",\r\n  \"age\": 40\r\n}",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "personname",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/person/007037a0-0500-11e3-8ffd-0800200c9a66/name/fb88bc20-24f4-4dc2-ad7a-6272e75e4722",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "patientidentifiertype",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/patientidentifiertype",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "location",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/location",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "genidentifier",
+      "Url": "http://openmrs.demo/openmrs-standalone/module/idgen/generateIdentifier.form?source=1&username={login}&password={password}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "login",
+          "TokenName": "{login}",
+          "Value": "admin"
+        },
+        {
+          "Name": "password",
+          "TokenName": "{password}",
+          "Value": "Admin123"
+        }
+      ]
+    },
+    {
+      "Name": "findpatient",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/patient?q=Ashurbanipal Sargonid&v=full",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "PersonName",
+          "TokenName": "{PersonName}",
+          "Value": "Ashurbanipal Sargonid"
+        }
+      ]
+    },
+    {
+      "Name": "patient",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/patient",
+      "Method": "POST",
+      "Body": "{\r\n  \"identifiers\": [\r\n    {\r\n      \"identifier\": \"1003FW\",\r\n      \"identifierType\": \"05a29f94-c0ed-11e2-94be-8c13b969e334\",\r\n      \"location\": \"6351fcf4-e311-4a19-90f9-35667d99a8af\",\r\n      \"preferred\": true\r\n    }\r\n  ],\r\n  \"person\": \"7951f473-7363-4be7-ae69-a0649d443b27\"\r\n}",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "delperson",
+      "Url": "http://openmrs.demo/openmrs-standalone/ws/rest/v1/person/71ad2e76-1c43-43c9-8e5f-f9de8ccd8e91",
+      "Method": "DELETE",
+      "Body": "",
+      "Credential": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    }
+  ]
+}
