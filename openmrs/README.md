@@ -1,3 +1,5 @@
+ [<i class="fa fa-download fa-3" style="color: firebrick"></i>Download Now](https://inflectra.github.io/DownGit/#/home?url=https://github.com/Inflectra/rapise-framework-examples/tree/master/openmrs)
+
 # Planet Test Automation: First Steps, Part 4: Automating REST/SOAP API Testing
 
 Now we talk about API testing. Our plan is to touch both SOAP and REST endpoints in some real-life scenario.
