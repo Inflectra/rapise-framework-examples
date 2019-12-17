@@ -744,5 +744,82 @@ var saved_script_objects={
 		"xpath": "//ul[@id='formBreadcrumb']/li[4]",
 		"title": "OpenMRS Electronic Medical Record",
 		"url": "http://localhost:8081/openmrs-standalone/registrationapp/registerPatient.page?appId=referenceapplication.registrationapp.registerPatient"
+	},
+	"Data_CSV": {
+		"locations": [
+			{
+				"locator_name": "Spreadsheet",
+				"location": {
+					"path": "param:path"
+				}
+			}
+		],
+		"window_name": "Spreadsheets",
+		"version": 0,
+		"ignore_object_name": true,
+		"object_type": "Spreadsheet",
+		"object_flavor": "Table",
+		"object_library": "Spreadsheet",
+		"path": "%WORKDIR%\\DataSources\\Data.csv"
+	},
+	"Data_XLS": {
+		"locations": [
+			{
+				"locator_name": "Spreadsheet",
+				"location": {
+					"path": "param:path"
+				}
+			}
+		],
+		"window_name": "Spreadsheets",
+		"version": 0,
+		"ignore_object_name": true,
+		"object_type": "Spreadsheet",
+		"object_flavor": "Table",
+		"object_library": "Spreadsheet",
+		"path": "%WORKDIR%\\DataSources\\Data.xlsx"
+	},
+	"DaysOfWeek": {
+		"locations": [
+			{
+				"locator_name": "Spreadsheet",
+				"location": {
+					"path": "param:path"
+				}
+			}
+		],
+		"window_name": "Spreadsheets",
+		"version": 0,
+		"ignore_object_name": true,
+		"object_type": "Spreadsheet",
+		"object_flavor": "Table",
+		"object_library": "Spreadsheet",
+		"path": "%WORKDIR%\\DataOrigin\\DaysOfWeek.xlsx"
+	},
+	"Login": {
+		"locations": [
+			{
+				"locator_name": "HTML",
+				"location": {
+					"xpath": "param:xpath",
+					"url": "param:url",
+					"title": "param:title"
+				}
+			}
+		],
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "\n                    \n                    Login\n                ",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Generic",
+		"object_name": "Login",
+		"ignore_object_name": true,
+		"object_library": "Chrome HTML",
+		"window_name": "Login",
+		"xpath": "//legend",
+		"title": "Login",
+		"url": "http://localhost:8081/openmrs-standalone/login.htm"
 	}
 };

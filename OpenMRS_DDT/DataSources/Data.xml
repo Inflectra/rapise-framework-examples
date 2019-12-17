@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<dictionary>
+  <language name="English">
+    <word name="Welcome">Welcome</word>
+  </language>
+  <language name="Hebrew">
+    <word name="Welcome">ברוך הבא</word>
+  </language>
+  <language name="Russian">
+    <word name="Welcome">Добро пожаловать</word>
+  </language>
+  <language name="Chinese">
+    <word name="Welcome">歡迎光臨</word>
+  </language>
+ 
+</dictionary>

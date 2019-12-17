@@ -257,3 +257,14 @@ function GenDataSpreadsheet(/**string*/srcXlsx, /**string*/dstXlsx, /**number*/c
 	}
 	Spreadsheet._SpreadSheet.Save();
 }
+
+
+function ReadXMLValue(/**string*/ xmlFile, /**string*/ xpath)
+{
+	var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+	xmlDoc.async = false;
+	xmlDoc.load(xmlFile);
+
+ 	var value = xmlDoc.selectSingleNode(xpath);
+	return value.text;
+}
