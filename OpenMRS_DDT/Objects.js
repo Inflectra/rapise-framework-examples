@@ -125,7 +125,7 @@ var saved_script_objects={
 		"ignore_object_name": true,
 		"object_library": "Chrome HTML",
 		"window_name": "Login",
-		"xpath": "param_vars://li[@id='{LocationName}']",
+		"xpath": "param_vars://li[@id='%LocationName%']",
 		"title": "Login",
 		"url": "http://localhost:8081/openmrs-standalone/login.htm",
 		"LocationName": "Pharmacy"
