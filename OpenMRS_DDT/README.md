@@ -4,7 +4,7 @@ This is a sample framework for demonstration of Rapise features for data-driven 
 
 ## Application Under Test
 
-[OpenMRS](https://openmrs.org/) - is our application under test You may use the [online demo](https://openmrs.org/demo/) or [download](https://openmrs.org/download/) the standalone edition and simply run it with a click of a mouse. The only prerequisite is to have [Java](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) installed on your machine.
+[OpenMRS](https://openmrs.org/) - is our application under test. You may use the [online demo](https://openmrs.org/demo/) or [download](https://openmrs.org/download/) the standalone edition and simply run it with a click of a mouse. The only prerequisite is to have [Java](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) installed on your machine.
 
 ## Components
 
@@ -21,7 +21,7 @@ Contains examples of reading data from various sources:
 - Excel File
 - Database
 - RVL Map
-- Generators
+- [Generators](https://github.com/Inflectra/rapise-powerpack/tree/master/DataGenerator)
 
 ### DataOrigin
 
