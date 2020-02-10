@@ -1,3 +1,5 @@
+![Download](https://github.githubassets.com/images/icons/emoji/unicode/23ec.png?v8) [Download Now](https://inflectra.github.io/DownGit/#/home?url=https://github.com/Inflectra/rapise-framework-examples/tree/master/OpenMRS_DDT)
+
 # OpenMRS_DDT
 
 This is a sample framework for demonstration of Rapise features for data-driven testing. It was created for the webinar series [Planet Test Automation](https://www.inflectra.com/Ideas/Entry/webinar-series-planet-test-automation-first-steps-897.aspx) we created at Inflectra.
