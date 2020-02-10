@@ -12,7 +12,12 @@ This is a sample framework for demonstration of Rapise features for data-driven 
 
 The framework consists of a parent test and several sub-tests.
 
-### DataSources
+Test cases are named to reflect their purpose:
+
+TC_* - test cases,
+U_* - utility modules, i.e. something used by other test cases.
+
+### TC_DataSources
 
 Contains examples of reading data from various sources:
 
@@ -25,7 +30,7 @@ Contains examples of reading data from various sources:
 - RVL Map
 - [Generators](https://github.com/Inflectra/rapise-powerpack/tree/master/DataGenerator)
 
-### DataOrigin
+### TC_DataOrigin
 
 Shows how to operate with different kinds of data:
 
@@ -35,7 +40,7 @@ Shows how to operate with different kinds of data:
 - Sequences (using next value from a sequence on each test run)
 - Encrypted
 
-### DataOutput
+### TC_DataOutput
 
 Demonstrates writing into different types of files:
 
@@ -48,19 +53,23 @@ Demonstrates writing into different types of files:
 
 Also this sub-test shows how to compare spreadsheets and bitmaps.
 
-### Login, Logout
+### M_Login, M_Logout
+
+Utility modules, used by other test cases.
 
 These sub-tests implement login and logout for OpenMRS web application. Login is parameterized and receives username/password from other sub-tests.
 
-### DefaultLogins
+M_ means 'Module', i.e. building block for test cases.
+
+### TC_DefaultLogins
 
 It is data-driven scenario that iterates through a table of OpenMRS logins and checks they are valid.
 
-### CheckDashboardTiles
+### TC_CheckDashboardTiles
 
 This data-driven scenario uses an Excel spreadsheet to check modules that should be available to different types of users after login.
 
-### RegisterPatient
+### TC_RegisterPatient
 
 In this example data for patient registration is generated during playback. It is a demonstration of [DataGenerator](https://github.com/Inflectra/rapise-powerpack/tree/master/DataGenerator).
 

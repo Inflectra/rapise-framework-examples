@@ -1,10 +1,10 @@
 
+
 function Test(params)
 {
-	RVL.DoPlayScript("%WORKDIR%\\DataSources\\Main.rvl.xlsx", "RVL");
+	RVL.DoPlayScript("%WORKDIR%\\TC_DataOutput\\Main.rvl.xlsx", "RVL");
 }
 
 g_load_libraries=["%g_browserLibrary:Chrome HTML%"];
-
 
 

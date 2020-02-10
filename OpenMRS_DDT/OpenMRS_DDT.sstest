@@ -37,31 +37,16 @@
     </Groups>
     <TestFiles>
       <TestFile>
-        <Path>CheckDashboardTiles\CheckDashboardTiles.sstest</Path>
-      </TestFile>
-      <TestFile>
         <Path>Config.xlsx</Path>
       </TestFile>
       <TestFile>
         <Path>Data.xlsx</Path>
       </TestFile>
       <TestFile>
-        <Path>DataOrigin\DataOrigin.sstest</Path>
+        <Path>M_Login\M_Login.sstest</Path>
       </TestFile>
       <TestFile>
-        <Path>DataOutput\DataOutput.sstest</Path>
-      </TestFile>
-      <TestFile>
-        <Path>DataSources\DataSources.sstest</Path>
-      </TestFile>
-      <TestFile>
-        <Path>DefaultLogins\DefaultLogins.sstest</Path>
-      </TestFile>
-      <TestFile>
-        <Path>Login\Login.sstest</Path>
-      </TestFile>
-      <TestFile>
-        <Path>Logout\Logout.sstest</Path>
+        <Path>M_Logout\M_Logout.sstest</Path>
       </TestFile>
       <TestFile>
         <Path>Main.js</Path>
@@ -73,7 +58,22 @@
         <Path>Objects.js</Path>
       </TestFile>
       <TestFile>
-        <Path>RegisterPatient\RegisterPatient.sstest</Path>
+        <Path>TC_CheckDashboardTiles\TC_CheckDashboardTiles.sstest</Path>
+      </TestFile>
+      <TestFile>
+        <Path>TC_DataOrigin\TC_DataOrigin.sstest</Path>
+      </TestFile>
+      <TestFile>
+        <Path>TC_DataOutput\TC_DataOutput.sstest</Path>
+      </TestFile>
+      <TestFile>
+        <Path>TC_DataSources\TC_DataSources.sstest</Path>
+      </TestFile>
+      <TestFile>
+        <Path>TC_DefaultLogins\TC_DefaultLogins.sstest</Path>
+      </TestFile>
+      <TestFile>
+        <Path>TC_RegisterPatient\TC_RegisterPatient.sstest</Path>
       </TestFile>
       <TestFile>
         <Path>User.js</Path>

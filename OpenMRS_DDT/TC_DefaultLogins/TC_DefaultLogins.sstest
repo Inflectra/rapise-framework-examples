@@ -3,7 +3,7 @@
   <ScriptPath>Main.js</ScriptPath>
   <UserFunctionsPath>..\User.js</UserFunctionsPath>
   <ObjectsPath>..\Objects.js</ObjectsPath>
-  <ReportPath>CheckDashboardTiles.trp</ReportPath>
+  <ReportPath>DefaultLogins.trp</ReportPath>
   <CommandInterval>300</CommandInterval>
   <IterationsCount>1</IterationsCount>
   <StopOnError>true</StopOnError>
@@ -58,7 +58,7 @@
     <TestParam name="Record Title" variable="g_rWnd" defaultValue="regex:.*" description="Application Title to Record" output="false" ask="false">
       <PossibleValues />
     </TestParam>
-    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\CheckDashboardTiles\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
+    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\TC_DefaultLogins\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
       <PossibleValues />
     </TestParam>
   </TestParams>

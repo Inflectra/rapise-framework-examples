@@ -3,7 +3,7 @@
   <ScriptPath>Main.js</ScriptPath>
   <UserFunctionsPath>..\User.js</UserFunctionsPath>
   <ObjectsPath>..\Objects.js</ObjectsPath>
-  <ReportPath>DataOutput.trp</ReportPath>
+  <ReportPath>Logout.trp</ReportPath>
   <CommandInterval>1000</CommandInterval>
   <IterationsCount>1</IterationsCount>
   <StopOnError>true</StopOnError>
@@ -26,24 +26,6 @@
     <FilterWildcard>*.*</FilterWildcard>
     <FilterPath />
     <Groups>
-      <TestGroup>
-        <Name>Images</Name>
-        <IsFilterGroup>false</IsFilterGroup>
-        <FilterWildcard>*.*</FilterWildcard>
-        <FilterPath>Images</FilterPath>
-        <Groups />
-        <TestFiles>
-          <TestFile>
-            <Path>Images\Checkpoint0001.png</Path>
-          </TestFile>
-          <TestFile>
-            <Path>Images\Checkpoint0002.png</Path>
-          </TestFile>
-          <TestFile>
-            <Path>Images\Checkpoint0003.png</Path>
-          </TestFile>
-        </TestFiles>
-      </TestGroup>
       <TestGroup>
         <Name>Reports</Name>
         <IsFilterGroup>true</IsFilterGroup>
@@ -76,7 +58,7 @@
     <TestParam name="Record Title" variable="g_rWnd" defaultValue="regex:.*" description="Application Title to Record" output="false" ask="false">
       <PossibleValues />
     </TestParam>
-    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\DataOutput\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
+    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\M_Logout\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
       <PossibleValues />
     </TestParam>
     <TestParam name="Detect Web Plugins" variable="g_webPluginsAutoDetect" defaultValue="False" description="Enable web plugins auto detection" output="false" ask="false">
