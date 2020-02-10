@@ -760,7 +760,7 @@ var saved_script_objects={
 		"object_type": "Spreadsheet",
 		"object_flavor": "Table",
 		"object_library": "Spreadsheet",
-		"path": "%WORKDIR%\\DataSources\\Data.csv"
+		"path": "%WORKDIR%\\TC_DataSources\\Data.csv"
 	},
 	"Data_XLS": {
 		"locations": [
@@ -777,7 +777,7 @@ var saved_script_objects={
 		"object_type": "Spreadsheet",
 		"object_flavor": "Table",
 		"object_library": "Spreadsheet",
-		"path": "%WORKDIR%\\DataSources\\Data.xlsx"
+		"path": "%WORKDIR%\\TC_DataSources\\Data.xlsx"
 	},
 	"DaysOfWeek": {
 		"locations": [
@@ -794,7 +794,7 @@ var saved_script_objects={
 		"object_type": "Spreadsheet",
 		"object_flavor": "Table",
 		"object_library": "Spreadsheet",
-		"path": "%WORKDIR%\\DataOrigin\\DaysOfWeek.xlsx"
+		"path": "%WORKDIR%\\TC_DataOrigin\\DaysOfWeek.xlsx"
 	},
 	"Login": {
 		"locations": [
