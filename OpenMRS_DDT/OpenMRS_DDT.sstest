@@ -40,6 +40,9 @@
         <Path>CheckDashboardTiles\CheckDashboardTiles.sstest</Path>
       </TestFile>
       <TestFile>
+        <Path>Config.xlsx</Path>
+      </TestFile>
+      <TestFile>
         <Path>Data.xlsx</Path>
       </TestFile>
       <TestFile>

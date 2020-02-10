@@ -1,5 +1,19 @@
-//Put your custom functions and variables in this file
 
+if(!g_recording)
+{
+	TestPrepare = function()
+	{
+		if(g_entryPointName == "RVLSpecialEntryPoint")
+		{
+			// We have 'Run Selection' - partial execution.
+			// So we assume there should be a browser
+			Navigator.Open('');
+		} else {
+			var url = Global.GetProperty('url', 'https://demo.openmrs.org/openmrs/', "%WORKDIR%\\Config.xlsx");
+			Navigator.Open(url);
+		}
+	}
+}
 
 //Definition of formats not appearing as a Case in GetRandStrForToken
 var TemplateData = {

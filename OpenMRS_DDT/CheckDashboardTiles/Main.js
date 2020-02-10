@@ -3,7 +3,6 @@
 
 function Test(params)
 {
-
 	RVL.DoPlayScript("%WORKDIR%\\CheckDashboardTiles\\Main.rvl.xlsx", "RVL");
 }
 
