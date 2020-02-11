@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" v="18" t="">
   <ScriptPath>Main.js</ScriptPath>
-  <UserFunctionsPath>..\User.js</UserFunctionsPath>
-  <ObjectsPath>..\Objects.js</ObjectsPath>
-  <ReportPath>Scenarios.trp</ReportPath>
+  <UserFunctionsPath>..\..\User.js</UserFunctionsPath>
+  <ObjectsPath>..\..\Objects.js</ObjectsPath>
+  <ReportPath>S03_CreateMergePatient.trp</ReportPath>
   <CommandInterval>1000</CommandInterval>
   <IterationsCount>1</IterationsCount>
   <StopOnError>true</StopOnError>
@@ -19,22 +19,34 @@
   <SaveScreenshotsCaptureCursor>true</SaveScreenshotsCaptureCursor>
   <CommandLine />
   <EntryPoint>Test</EntryPoint>
-  <WorkDir>..\.</WorkDir>
+  <WorkDir>..\..\.</WorkDir>
   <TestFiles>
     <Name>Test</Name>
     <IsFilterGroup>false</IsFilterGroup>
     <FilterWildcard>*.*</FilterWildcard>
     <FilterPath />
-    <Groups />
+    <Groups>
+      <TestGroup>
+        <Name>Reports</Name>
+        <IsFilterGroup>true</IsFilterGroup>
+        <FilterWildcard>*.trp</FilterWildcard>
+        <FilterPath>Reports</FilterPath>
+        <Groups />
+        <TestFiles />
+      </TestGroup>
+    </Groups>
     <TestFiles>
       <TestFile>
-        <Path>S01_Login\S01_Login.sstest</Path>
+        <Path>Main.js</Path>
       </TestFile>
       <TestFile>
-        <Path>S02_CreatePatient\S02_CreatePatient.sstest</Path>
+        <Path>Main.rvl.xlsx</Path>
       </TestFile>
       <TestFile>
-        <Path>S03_CreateMergePatient\S03_CreateMergePatient.sstest</Path>
+        <Path>..\..\Objects.js</Path>
+      </TestFile>
+      <TestFile>
+        <Path>..\..\User.js</Path>
       </TestFile>
     </TestFiles>
   </TestFiles>
@@ -46,7 +58,7 @@
     <TestParam name="Record Title" variable="g_rWnd" defaultValue="regex:.*" description="Application Title to Record" output="false" ask="false">
       <PossibleValues />
     </TestParam>
-    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\Scenarios\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
+    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\Scenarios\TC03_CreateMergePatient\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
       <PossibleValues />
     </TestParam>
   </TestParams>

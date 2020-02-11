@@ -34,10 +34,10 @@
         <Groups />
         <TestFiles>
           <TestFile>
-            <Path>Login\Login.sstest</Path>
+            <Path>M_Login\M_Login.sstest</Path>
           </TestFile>
           <TestFile>
-            <Path>Logout\Logout.sstest</Path>
+            <Path>M_Logout\M_Logout.sstest</Path>
           </TestFile>
         </TestFiles>
       </TestGroup>
@@ -57,17 +57,17 @@
         <Groups />
         <TestFiles>
           <TestFile>
-            <Path>EnsureSingleUser\EnsureSingleUser.sstest</Path>
+            <Path>M_EnsureSingleUser\M_EnsureSingleUser.sstest</Path>
           </TestFile>
           <TestFile>
-            <Path>LogSpiraIncident\LogSpiraIncident.sstest</Path>
+            <Path>M_LogSpiraIncident\M_LogSpiraIncident.sstest</Path>
           </TestFile>
         </TestFiles>
       </TestGroup>
     </Groups>
     <TestFiles>
       <TestFile>
-        <Path>Config.json</Path>
+        <Path>Config.xlsx</Path>
       </TestFile>
       <TestFile>
         <Path>Main.js</Path>
@@ -77,6 +77,9 @@
       </TestFile>
       <TestFile>
         <Path>Objects.js</Path>
+      </TestFile>
+      <TestFile>
+        <Path>README.md</Path>
       </TestFile>
       <TestFile>
         <Path>Scenarios\Scenarios.sstest</Path>

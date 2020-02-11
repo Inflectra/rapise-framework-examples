@@ -10,10 +10,12 @@ function Test(params)
 // 5. Check that patient merge warning is displayed.
 
 	params = params||{};
-	g_restRoot = "%WORKDIR%/EnsureSingleUser";
+	g_restRoot = "%WORKDIR%/M_EnsureSingleUser";
 
-
-	var enc = Base64.encode('admin:Admin123');
+	var mrsLogin = Global.GetProperty('mrslogin');
+	var mrsPass = Global.GetProperty('mrspass');
+	mrsPass = Global.DoDecrypt(mrsPass);
+	var enc = Base64.encode(mrsLogin + ':' + mrsPass);
 	Tester.Message(enc);
 
 	var firstName = params.firstName || Global.GetProperty('uniquepatientfirst');
@@ -21,6 +23,7 @@ function Test(params)
 	var age = params.age || Global.GetProperty('uniquepatientage');
 	
 	Session.SetRequestHeader({"Name":"Content-Type","Value":"application/json"});
+	Session.SetUrl('http://openmrs.demo/openmrs-standalone/', Global.GetProperty('url'));
 
 	var OpenMRS_session=SeS('OpenMRS_session');
 	OpenMRS_session.SetRequestHeaders(
@@ -97,7 +100,7 @@ function Test(params)
 		var incInfo = 'More than one patients already exist: '+ firstName+' '+lastName;
 		var incData = JSON.stringify(OpenMRS_findpatient.GetResponseBodyObject("results"), null, '\t')
 		
-		Global.DoInvokeTest('%WORKDIR%/LogSpiraIncident/LogSpiraIncident.sstest',
+		Global.DoInvokeTest('%WORKDIR%/M_LogSpiraIncident/M_LogSpiraIncident.sstest',
 			{
 				name: incInfo,
 				description: 'Found users:<br/><pre>'+ incData+"</pre>"
