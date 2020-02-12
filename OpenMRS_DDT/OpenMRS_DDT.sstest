@@ -43,6 +43,9 @@
         <Path>Data.xlsx</Path>
       </TestFile>
       <TestFile>
+        <Path>C:\work\rapise-framework-examples\OpenMRS_DDT\Dropdowns.xlsx</Path>
+      </TestFile>
+      <TestFile>
         <Path>M_Login\M_Login.sstest</Path>
       </TestFile>
       <TestFile>
