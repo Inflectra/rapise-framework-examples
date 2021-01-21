@@ -144,5 +144,23 @@ saved_script_objects={
 			}
 		}
 	]
+},
+	CrateApi_SubscriptionCreate:{
+	"version": 0,
+	"object_text": "param:object_name",
+	"object_type": "RESTService",
+	"object_flavor": "WebService",
+	"object_name": "SubscriptionCreate",
+	"object_library": "Web Service",
+	"window_name": "CrateApi",
+	"locations": [
+		{
+			"locator_name": "REST",
+			"location": {
+				"definition": "param:window_name",
+				"request": "param:object_name"
+			}
+		}
+	]
 }
 };

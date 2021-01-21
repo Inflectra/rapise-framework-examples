@@ -89,51 +89,69 @@ function CreateUser(/**string*/ user_name, /**string*/ user_email, /**string*/ u
 	Tester.Assert("Created user " + user_name + " with id " + id, isCreated);
 }
 
-function DeleteUser(/**string*/ user_name)
+function DeleteUser(/**string*/ user_email, /**string*/ user_password)
 {
-	var CrateApi_ListUsers = SeS('CrateApi_ListUsers');
-	CrateApi_ListUsers.DoExecute();
-	
-	var users = CrateApi_ListUsers.GetResponseBodyObject("data.users");
-	for(var i = 0; i < users.length; i++)
+	var user = LoginUser(user_email, user_password);
+	if (!user)
 	{
-		var user = users[i];
-		Tester.Message(user.name);
-		if (user.name == user_name)
+		Tester.Message("User login failed: " + user_email);
+		return;
+	}
+	
+	// unsubscribe
+	var CrateApi_SubscriptionsByUser = SeS('CrateApi_SubscriptionsByUser');
+	CrateApi_SubscriptionsByUser.DoExecute();
+	var subscriptions = CrateApi_SubscriptionsByUser.GetResponseBodyObject("data.subscriptionsByUser");
+	for(var j = 0; j < subscriptions.length; j++)
+	{
+		var s = subscriptions[j];
+		Tester.Message("Deleting subscription: " + s.crate.name);
+		var CrateApi_SubscriptionRemove = SeS('CrateApi_SubscriptionRemove');
+		CrateApi_SubscriptionRemove.SetParameters("subscription_id", s.id);
+		CrateApi_SubscriptionRemove.DoExecute();
+		var response = CrateApi_SubscriptionRemove.GetResponseBodyObject();
+		if (response.errors)
 		{
-			// login
-			var CrateApi_Login = SeS('CrateApi_Login');
-			CrateApi_Login.SetParameters("user_email", user.email);
-			CrateApi_Login.SetParameters("user_password", "123456");
-			CrateApi_Login.DoExecute();
-		
-			// unsubscribe
-			var CrateApi_SubscriptionsByUser = SeS('CrateApi_SubscriptionsByUser');
-			CrateApi_SubscriptionsByUser.DoExecute();
-			var subscriptions = CrateApi_SubscriptionsByUser.GetResponseBodyObject("data.subscriptionsByUser");
-			for(var j = 0; j < subscriptions.length; j++)
-			{
-				var s = subscriptions[j];
-				Tester.Message("Deleting subscription: " + s.crate.name);
-				var CrateApi_SubscriptionRemove = SeS('CrateApi_SubscriptionRemove');
-				CrateApi_SubscriptionRemove.SetParameters("subscription_id", s.id);
-				CrateApi_SubscriptionRemove.DoExecute();
-				var response = CrateApi_SubscriptionRemove.GetResponseBodyObject();
-				if (response.errors)
-				{
-					Tester.Message(response.errors[0]);
-				}
-			}
-		
-			// delete
-			var CrateApi_DeleteUser = SeS('CrateApi_DeleteUser');
-			CrateApi_DeleteUser.SetParameters("user_id", user.id);
-			var result = CrateApi_DeleteUser.DoExecute();
-			var response = CrateApi_DeleteUser.GetResponseBodyObject();
-			var isDeleted = typeof(response.errors) == "undefined";
-			
-			Tester.Assert("User deleted succesfully: " + user_name, isDeleted);
+			Tester.Message(response.errors[0]);
 		}
+	}
+		
+	// delete
+	var CrateApi_DeleteUser = SeS('CrateApi_DeleteUser');
+	CrateApi_DeleteUser.SetParameters("user_id", user.id);
+	var result = CrateApi_DeleteUser.DoExecute();
+	var response = CrateApi_DeleteUser.GetResponseBodyObject();
+	var isDeleted = typeof(response.errors) == "undefined";
+	
+	Tester.Assert("User deleted succesfully: " + user.name, isDeleted);
+}
+
+function LoginUser(/**string*/ user_email, /**string*/ user_password)
+{
+	var CrateApi_Login = SeS('CrateApi_Login');
+	CrateApi_Login.SetParameters("user_email", user_email);
+	CrateApi_Login.SetParameters("user_password", user_password);
+	CrateApi_Login.DoExecute();
+	var response = CrateApi_Login.GetResponseBodyObject();
+	var isLogged = typeof(response.errors) == "undefined";
+	if (isLogged)
+	{
+		Tester.Message("User " + response.data.userLogin.user.name + " logged in");
+		return response.data.userLogin.user;
+	}
+	return null;
+}
+
+function SubscribeCrate(crate_id)
+{
+	var CrateApi_SubscriptionCreate=SeS('CrateApi_SubscriptionCreate');
+	CrateApi_SubscriptionCreate.SetParameter("crate_id", "1");
+	CrateApi_SubscriptionCreate.DoExecute();
+	var response = CrateApi_SubscriptionCreate.GetResponseBodyObject();
+	var subscribed = typeof(response.errors) == "undefined";
+	if (subscribed)
+	{
+		Tester.Message("Subscription created " + response.data.subscriptionCreate.id);
 	}
 }
 

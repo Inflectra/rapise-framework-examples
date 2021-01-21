@@ -1,8 +1,8 @@
 {
-  "CurrentRequestName": "SubscriptionRemove",
-  "CurrentPath": "C:\\Users\\marko\\Documents\\My Rapise Tests\\Crate\\CrateApi\\CrateApi.rest",
   "BeforeCallCommon": "Before_CrateApi",
   "AfterCallCommon": null,
+  "RecordHeaders": false,
+  "RecordParameters": true,
   "Name": "CrateApi.rest",
   "BaseName": "CrateApi",
   "Requests": [
@@ -186,6 +186,30 @@
           "Name": "subscription_id",
           "TokenName": "{subscription_id}",
           "Value": "8"
+        }
+      ]
+    },
+    {
+      "Name": "SubscriptionCreate",
+      "Url": "http://crate:5900",
+      "Method": "POST",
+      "Body": "{\r\n  \"query\": \"mutation { subscriptionCreate (crateId: {crate_id}) { id } }\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": "Before_CrateApi_SubscriptionRemove",
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "crate_id",
+          "TokenName": "{crate_id}",
+          "Value": "1"
         }
       ]
     }
