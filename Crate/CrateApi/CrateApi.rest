@@ -1,0 +1,193 @@
+{
+  "CurrentRequestName": "SubscriptionRemove",
+  "CurrentPath": "C:\\Users\\marko\\Documents\\My Rapise Tests\\Crate\\CrateApi\\CrateApi.rest",
+  "BeforeCallCommon": "Before_CrateApi",
+  "AfterCallCommon": null,
+  "Name": "CrateApi.rest",
+  "BaseName": "CrateApi",
+  "Requests": [
+    {
+      "Name": "ListUsers",
+      "Url": "http://crate:5900",
+      "Method": "POST",
+      "Body": "{\r\n  \"query\": \"{ users {id name email} }\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": "",
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "DeleteUser",
+      "Url": "http://crate:5900",
+      "Method": "POST",
+      "Body": "{\r\n  \"query\": \"mutation { userRemove (id: {user_id}) { id } }\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": "",
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "user_id",
+          "TokenName": "{user_id}",
+          "Value": "34"
+        }
+      ]
+    },
+    {
+      "Name": "Test",
+      "Url": "http://crate:5900",
+      "Method": "POST",
+      "Body": "{\r\n  \"query\": \"{ users {id name email} }\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": "",
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "Signup",
+      "Url": "http://crate:5900",
+      "Method": "POST",
+      "Body": "{\r\n  \"query\": \"mutation { userSignup (name: \\\"{user_name}\\\", email: \\\"{user_email}\\\", password: \\\"{user_password}\\\") { id }}\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": "",
+      "AfterCall": "",
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "user_name",
+          "TokenName": "{user_name}",
+          "Value": "Robin"
+        },
+        {
+          "Name": "user_email",
+          "TokenName": "{user_email}",
+          "Value": "robin@crate.com"
+        },
+        {
+          "Name": "user_password",
+          "TokenName": "{user_password}",
+          "Value": "123456"
+        }
+      ]
+    },
+    {
+      "Name": "Login",
+      "Url": "http://crate:5900",
+      "Method": "POST",
+      "Body": "{\r\n  \"query\": \"{ userLogin (email: \\\"{user_email}\\\", password: \\\"{user_password}\\\") { user {id name email} token }}\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": "",
+      "AfterCall": "After_CrateApi_Login",
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "user_email",
+          "TokenName": "{user_email}",
+          "Value": "robin@crate.com"
+        },
+        {
+          "Name": "user_password",
+          "TokenName": "{user_password}",
+          "Value": "123456"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscriptions",
+      "Url": "http://crate:5900",
+      "Method": "POST",
+      "Body": "{\r\n  \"query\": \"{ subscriptions {id crate {name} user {id} } }\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": "",
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "SubscriptionsByUser",
+      "Url": "http://crate:5900",
+      "Method": "POST",
+      "Body": "{\r\n  \"query\": \"{ subscriptionsByUser {id crate {name} user {id} } }\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": "Before_CrateApi_SubscriptionsByUser",
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "SubscriptionRemove",
+      "Url": "http://crate:5900",
+      "Method": "POST",
+      "Body": "{\r\n  \"query\": \"mutation { subscriptionRemove (id: {subscription_id}) { id } }\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": "Before_CrateApi_SubscriptionRemove",
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "subscription_id",
+          "TokenName": "{subscription_id}",
+          "Value": "8"
+        }
+      ]
+    }
+  ]
+}
