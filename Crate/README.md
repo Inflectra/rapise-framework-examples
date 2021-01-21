@@ -8,6 +8,18 @@ This is a sample framework for demonstration of Rapise features for Mobile, API 
 
 [Crate](https://github.com/atulmy/crate) - is our application under test.
 
+## Prerequisites
+
+Create Config.json file in the root folder of the framework.
+
+```json
+{
+	"AccessKey": "<SeeTest cloud access key>",
+	"WebURL": "<Crate Web URL>",
+	"ApiURL": "<Crate API URL>"
+}
+```
+
 ## Components
 
 The framework consists of a parent test and several sub-tests.

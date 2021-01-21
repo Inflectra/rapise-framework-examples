@@ -17,6 +17,15 @@ function TestFinish()
 	}
 }
 
+function TestInit()
+{
+	var status = CheckConfig();
+	if (!status)
+	{
+		Tester.FailTest("Parameters are missing in Config.json")
+	}
+}
+
 function IsMobileTest()
 {
 	return (typeof(AppiumDriver) != "undefined" && AppiumDriver);
@@ -40,15 +49,30 @@ function GetAppiumNonProfileCapabilities(profile)
 	return caps;
 }
 
-function SetBearerToken(request)
+function CheckConfig()
 {
-	request.SetHeader('Authorization', 'Bearer ' + auth_token);
-}
-
-function SetApiUrl(request)
-{
-	var url = Global.GetProperty("ApiURL");
-	request.SetUrl(url);
+	var result = true;
+	var accessKey = Global.GetProperty("AccessKey");
+	if (!accessKey)
+	{
+		Tester.Message("SeeTest AccessKey is not set in Config.json");
+		result = false;
+	}
+	
+	var apiUrl = Global.GetProperty("ApiURL");
+	if (!apiUrl)
+	{
+		Tester.Message("Crate API URL is not set in Config.json");
+		result = false;
+	}
+	
+	var webUrl = Global.GetProperty("WebURL");
+	if (!webUrl)
+	{
+		Tester.Message("Crate WEB URL is not set in Config.json");
+		result = false;
+	}
+	return result;
 }
 
 function CreateUser(/**string*/ user_name, /**string*/ user_email, /**string*/ user_password)
@@ -142,4 +166,15 @@ function Before_CrateApi(/**RESTRequest*/request)
 {
 	Log('Before_CrateApi');
 	SetApiUrl(request);
+}
+
+function SetBearerToken(request)
+{
+	request.SetHeader('Authorization', 'Bearer ' + auth_token);
+}
+
+function SetApiUrl(request)
+{
+	var url = Global.GetProperty("ApiURL");
+	request.SetUrl(url);
 }
