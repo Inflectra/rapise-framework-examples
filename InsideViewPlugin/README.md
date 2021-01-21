@@ -8,4 +8,4 @@ In Rapise one can define a complex object that spans across multiple DOM nodes. 
 
 See also: [Automated Testing of Complex Web UI Components: Behind The Scenes](https://www.inflectra.com/Ideas/Entry/techtuesday-automated-testing-of-complex-web-ui-co-479.aspx)
 
-Note: webinar recording link will be added soon.
+[Webinar Recording](https://www.youtube.com/watch?v=zJOyQVemrYE&feature=emb_logo)
