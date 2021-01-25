@@ -38,8 +38,8 @@ function GetAppiumNonProfileCapabilities(profile)
 	// set capabilities based on a profile name
 	if (profile == "Crate iOS SeeTest")
 	{
-		caps["deviceQuery"] = "@os='ios' and @version='13.3' and @category='PHONE'";
-		caps["accessKey"] = Global.GetProperty("AccessKey");
+		caps["deviceQuery"] = Global.GetProperty("DeviceQuery", "@os='ios' and @version='13.3' and @category='PHONE'", "%ARTIFACTS%/Device.json");
+		caps["accessKey"] = Global.GetProperty("AccessKey", "", "%ARTIFACTS%/Config.json");
 		if (typeof(g_mobileTestName) != "undefined")
 		{
 			caps["testName"] = g_mobileTestName;
@@ -52,21 +52,21 @@ function GetAppiumNonProfileCapabilities(profile)
 function CheckConfig()
 {
 	var result = true;
-	var accessKey = Global.GetProperty("AccessKey");
+	var accessKey = Global.GetProperty("AccessKey", "", "%ARTIFACTS%/Config.json");
 	if (!accessKey)
 	{
 		Tester.Message("SeeTest AccessKey is not set in Config.json");
 		result = false;
 	}
 	
-	var apiUrl = Global.GetProperty("ApiURL");
+	var apiUrl = Global.GetProperty("ApiURL", "", "%ARTIFACTS%/Config.json");
 	if (!apiUrl)
 	{
 		Tester.Message("Crate API URL is not set in Config.json");
 		result = false;
 	}
 	
-	var webUrl = Global.GetProperty("WebURL");
+	var webUrl = Global.GetProperty("WebURL", "", "%ARTIFACTS%/Config.json");
 	if (!webUrl)
 	{
 		Tester.Message("Crate WEB URL is not set in Config.json");
