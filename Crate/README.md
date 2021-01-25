@@ -20,6 +20,14 @@ Create Config.json file in the root folder of the framework.
 }
 ```
 
+For running tests with SpiraTest/SeeTest create Device.json with `DeviceQuery` and attach to a test set.
+
+```json
+{
+	"DeviceQuery": "@os='ios' and @version='14.1' and @category='PHONE'"
+}
+```
+
 ## Components
 
 The framework consists of a parent test and several sub-tests.
