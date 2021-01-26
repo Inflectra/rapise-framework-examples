@@ -45,6 +45,8 @@ Test steps:
 1. Delete a given user if exists (API).
 2. Register the user in the system and test that the user can login successfully (Mobile, iOS).
 
+!(TC_Signup test case)[./Media/TC_Signup.png]
+
 ### TC_Subscribe
 
 Test steps:
@@ -54,6 +56,9 @@ Test steps:
 3. Log into the system, subscribe for a crate (Mobile, iOS).
 4. Check subscription (Web UI)
 5. Unsubscribe (Mobile, iOS).
+
+RVL
+!(TC_Subscribe test case)[./Media/TC_Subscribe.png]
 
 ### TC_MobileTemplate
 
@@ -72,6 +77,12 @@ Usage
 ### CrateWeb
 
 Used to call Web UI scenario (CheckSubscription).
+
+Scenario
+![CrateWeb scenario](./Media/RapiseCrateWebScenario.png)
+
+Usage
+![CrateWev call](./Media/RapiseCrateWebCall.png)
 
 
 
