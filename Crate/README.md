@@ -45,7 +45,7 @@ Test steps:
 1. Delete a given user if exists (API).
 2. Register the user in the system and test that the user can login successfully (Mobile, iOS).
 
-!(TC_Signup test case)[./Media/TC_Signup.png]
+![TC_Signup test case](./Media/TC_Signup.png)
 
 ### TC_Subscribe
 
@@ -58,7 +58,7 @@ Test steps:
 5. Unsubscribe (Mobile, iOS).
 
 RVL
-!(TC_Subscribe test case)[./Media/TC_Subscribe.png]
+![TC_Subscribe test case](./Media/TC_Subscribe.png)
 
 ### TC_MobileTemplate
 
@@ -82,7 +82,7 @@ Scenario
 ![CrateWeb scenario](./Media/RapiseCrateWebScenario.png)
 
 Usage
-![CrateWev call](./Media/RapiseCrateWebCall.png)
+![CrateWeb call](./Media/RapiseCrateWebCall.png)
 
 
 
