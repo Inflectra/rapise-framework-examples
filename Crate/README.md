@@ -61,7 +61,13 @@ Mobile test template. Clone to create a new test case.
 
 ### CrateApi
 
-Used to call API scenarios (DeleteUser, CreateUser).
+Used to call API scenarios (DeleteUser, CreateUser, LoginUser, SubscribeCrate).
+
+Request Definitions
+![CrateApi definitions](./Media/RapiseCrateApiEndpoints.png)
+
+Usage
+![CrateApi calls](./Media/RapiseCrateApiCalls.png)
 
 ### CrateWeb
 
