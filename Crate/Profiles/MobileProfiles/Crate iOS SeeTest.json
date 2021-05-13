@@ -104,7 +104,13 @@
   },
   "SeeTest Capabilities": {
     "testName": "Test",
-    "deviceQuery": "@os='ios' and @version='14.1' and @category='PHONE'"
+    "deviceQuery": "@os='ios' and @version='14.1' and @category='PHONE'",
+    "instrumentApp": "",
+    "applicationClearData": "",
+    "appBuildVersion": "",
+    "appReleaseVersion": "",
+    "installOnlyForUpdate": "",
+    "dontGoHomeOnQuit": ""
   },
   "Timeout": "120"
 }
