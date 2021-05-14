@@ -10,7 +10,7 @@
   },
   "Common Capabilities": {
     "automationName": "XCUITest",
-    "newCommandTimeout": "600",
+    "newCommandTimeout": 600,
     "autoLaunch": "",
     "language": "",
     "locale": "",

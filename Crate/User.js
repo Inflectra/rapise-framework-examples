@@ -15,6 +15,14 @@ function TestFinish()
 			iOS.DoScreenshot();
 		}
 	}
+	
+	if (IsMobileTest())
+	{
+		if (AppiumDriver.d)
+		{
+			AppiumDriver.Quit();
+		}
+	}
 }
 
 function TestInit()
@@ -38,7 +46,25 @@ function GetAppiumNonProfileCapabilities(profile)
 	// set capabilities based on a profile name
 	if (profile == "Crate iOS SeeTest")
 	{
-		caps["deviceQuery"] = Global.GetProperty("DeviceQuery", "@os='ios' and @version='13.3' and @category='PHONE'", "%ARTIFACTS%/Device.json");
+		var _deviceQuery = "";
+		if (typeof(DeviceQuery) != "undefined")
+		{
+			_deviceQuery = DeviceQuery;
+			if (!g_recording)
+			{
+				Tester.Message("Device Query set by parallel runner: " + _deviceQuery);
+			}
+		}
+		else
+		{
+			_deviceQuery = Global.GetProperty("DeviceQuery", "@os='ios' and @version='13.3' and @category='PHONE'", "%ARTIFACTS%/Device.json");
+			if (!g_recording)
+			{
+				Tester.Message("Device Query set by Device.json: " + _deviceQuery);
+			}
+		}
+	
+		caps["deviceQuery"] = _deviceQuery;
 		caps["accessKey"] = Global.GetProperty("AccessKey", "", "%ARTIFACTS%/Config.json");
 		if (typeof(g_mobileTestName) != "undefined")
 		{
