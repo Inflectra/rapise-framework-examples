@@ -68,6 +68,9 @@
         <Path>TC_Subscribe\TC_Subscribe.sstest</Path>
       </TestFile>
       <TestFile>
+        <Path>TestMatrix.xlsx</Path>
+      </TestFile>
+      <TestFile>
         <Path>User.js</Path>
       </TestFile>
     </TestFiles>
