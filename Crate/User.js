@@ -2,6 +2,7 @@
 
 g_browserLibrary = "Chrome";
 g_mobileProfile = "Crate iOS SeeTest";
+//g_mobileProfile = "Crate iOS Browserstack";
 
 g_recordUrls = false;
 
@@ -69,6 +70,16 @@ function GetAppiumNonProfileCapabilities(profile)
 		if (typeof(g_mobileTestName) != "undefined")
 		{
 			caps["testName"] = g_mobileTestName;
+		}
+	}
+	else if (profile == "Crate iOS Browserstack")
+	{
+		caps["app"] = Global.GetProperty("BrowserStackApp", "", "%ARTIFACTS%/Config.json");	
+		caps["browserstack.user"] = Global.GetProperty("BrowserStackUser", "", "%ARTIFACTS%/Config.json");
+		caps["browserstack.key"] = Global.GetProperty("BrowserStackKey", "", "%ARTIFACTS%/Config.json");
+		if (typeof(OsVersion) != "undefined")
+		{
+			caps["os_version"] = OsVersion;
 		}
 	}
 	
