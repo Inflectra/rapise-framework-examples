@@ -230,6 +230,6 @@ function SetBearerToken(request)
 
 function SetApiUrl(request)
 {
-	var url = Global.GetProperty("ApiURL");
+	var url = Global.GetProperty("ApiURL", "", "%ARTIFACTS%/Config.json");
 	request.SetUrl(url);
 }
