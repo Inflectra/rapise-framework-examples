@@ -1,0 +1,74 @@
+{
+  "BeforeCallCommon": null,
+  "AfterCallCommon": null,
+  "RecordHeaders": false,
+  "RecordParameters": false,
+  "Name": "LISRest.rest",
+  "BaseName": "LISRest",
+  "Requests": [
+    {
+      "Name": "Login",
+      "Url": "https://libraryinformationsystem.org/Services/RestService.svc/session",
+      "Method": "GET",
+      "Body": "",
+      "Credential": {
+        "UserName": "librarian",
+        "Password": "librarian",
+        "SecurePassword": {
+          "Length": 9
+        },
+        "Domain": ""
+      },
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Accept",
+          "Value": "application/json"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": []
+    },
+    {
+      "Name": "GetBooksCount",
+      "Url": "https://libraryinformationsystem.org/Services/RestService.svc/book?session_id={session_id}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": {
+        "UserName": "librarian",
+        "Password": "librarian",
+        "SecurePassword": {
+          "Length": 9
+        },
+        "Domain": ""
+      },
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Accept",
+          "Value": "application/json"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "session_id",
+          "TokenName": "{session_id}",
+          "Value": "1234"
+        }
+      ]
+    }
+  ]
+}

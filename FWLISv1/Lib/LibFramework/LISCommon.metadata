@@ -1,0 +1,117 @@
+{
+	"LISCommon": {
+		"window_name": "PageObjects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "DoLogin",
+				"description": "Login LIS using provided username and password",
+				"type": "object",
+				"returns": "",
+				"signature": "/**string*/user, password",
+				"paramInfo": {
+					"user": {
+						"type": "string"
+					},
+					"password": {
+						"type": "object"
+					},
+					"ReturnValue": {
+						"type": "object"
+					}
+				},
+				"src": "%WORKDIR%PageObjects\\LISCommon\\Main.rvl.xlsx(DoLogin,1,1)"
+			},
+			{
+				"name": "DoLogout",
+				"description": "Logout from LIS",
+				"type": "object",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LISCommon\\Main.rvl.xlsx(DoLogout,1,1)"
+			},
+			{
+				"name": "VerifyLoggedUser",
+				"description": "VerifyLoggedUser description",
+				"type": "object",
+				"returns": "",
+				"signature": "/**string*/UserName",
+				"paramInfo": {
+					"UserName": {
+						"type": "string"
+					},
+					"ReturnValue": {
+						"type": "object"
+					}
+				},
+				"src": "%WORKDIR%PageObjects\\LISCommon\\Main.rvl.xlsx(VerifyLoggedUser,1,1)"
+			},
+			{
+				"name": "DoLoginAs",
+				"description": "DoLoginAs description",
+				"type": "object",
+				"returns": "",
+				"signature": "/**string*/UserName",
+				"paramInfo": {
+					"UserName": {
+						"type": "string"
+					},
+					"ReturnValue": {
+						"type": "object"
+					}
+				},
+				"src": "%WORKDIR%PageObjects\\LISCommon\\Main.rvl.xlsx(DoLoginAs,1,1)"
+			},
+			{
+				"name": "IsLoggedIn",
+				"description": "IsLoggedIn description",
+				"type": "object",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {
+					"ReturnValue": {
+						"type": "object"
+					}
+				},
+				"src": "%WORKDIR%PageObjects\\LISCommon\\Main.rvl.xlsx(IsLoggedIn,1,1)"
+			},
+			{
+				"name": "DoGoTo",
+				"description": "DoGoTo description",
+				"type": "object",
+				"returns": "",
+				"signature": "/**string*/ModuleName",
+				"paramInfo": {
+					"ModuleName": {
+						"type": "string"
+					},
+					"ReturnValue": {
+						"type": "object"
+					}
+				},
+				"src": "%WORKDIR%PageObjects\\LISCommon\\Main.rvl.xlsx(DoGoTo,1,1)"
+			},
+			{
+				"name": "VerifyScreenText",
+				"description": "VerifyScreenText description",
+				"type": "object",
+				"returns": "",
+				"signature": "/**string*/textToCheck",
+				"paramInfo": {
+					"textToCheck": {
+						"type": "string"
+					},
+					"ReturnValue": {
+						"type": "object"
+					}
+				},
+				"src": "%WORKDIR%PageObjects\\LISCommon\\Main.rvl.xlsx(VerifyScreenText,1,1)"
+			}
+		],
+		"description": "Common operations\nfor Libraryinformationsystem\n",
+		"isPageObject": true,
+		"extend_rule": "",
+		"src": "%WORKDIR%PageObjects\\LISCommon\\Main.rvl.xlsx"
+	}
+}

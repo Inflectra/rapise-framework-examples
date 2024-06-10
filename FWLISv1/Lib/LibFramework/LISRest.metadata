@@ -1,0 +1,30 @@
+{
+	"LISRest": {
+		"window_name": "PageObjects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "Login",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LISRest\\LISRest.js(13,10)"
+			},
+			{
+				"name": "GetBooksCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LISRest\\LISRest.js(27,10)"
+			}
+		],
+		"isPageObject": true,
+		"extend_rule": "",
+		"description": "LISRest description",
+		"src": "%WORKDIR%PageObjects\\LISRest\\LISRest.js"
+	}
+}

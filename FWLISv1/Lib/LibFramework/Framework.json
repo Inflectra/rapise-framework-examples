@@ -1,0 +1,199 @@
+{
+	"pageobjects": {
+		"LISCommon": {
+			"id": "F47FEV0D",
+			"tags": "pageobject",
+			"js": "%WORKDIR%PageObjects\\LISCommon\\LISCommon.js",
+			"vpath": "",
+			"user": "%WORKDIR%PageObjects\\LISCommon\\User.js",
+			"sstest": "%WORKDIR%PageObjects\\LISCommon\\Test.sstest",
+			"rep": "%WORKDIR%PageObjects\\LISCommon\\Objects.js",
+			"libraries": [
+				"Web Service",
+				"Web"
+			],
+			"hash": "E4BF462F7F4133F9806EC74462A3FEB374A710AB0A21751049AB285E95794EBDE64ECF2074AF8390245C334763481B86A1627B3488D4F288E174EA52EE1D446666A5ADB2B99590C0769A0E9A063EDAFC"
+		},
+		"TableHandler": {
+			"id": "86JSIF6X",
+			"tags": "pageobject",
+			"js": "%WORKDIR%PageObjects\\TableHandler\\TableHandler.js",
+			"vpath": "",
+			"user": "%WORKDIR%PageObjects\\TableHandler\\User.js",
+			"sstest": "%WORKDIR%PageObjects\\TableHandler\\Test.sstest",
+			"rep": "%WORKDIR%PageObjects\\TableHandler\\Objects.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "264B700033E814201405F8E3022E1C17749859F04B22D13903182ED0ABA901A8E64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43"
+		},
+		"LISRest": {
+			"id": "1RJ9FAFU",
+			"tags": "pageobject",
+			"js": "%WORKDIR%PageObjects\\LISRest\\LISRest.js",
+			"vpath": "",
+			"user": "%WORKDIR%PageObjects\\LISRest\\User.js",
+			"sstest": "%WORKDIR%PageObjects\\LISRest\\Test.sstest",
+			"rep": "%WORKDIR%PageObjects\\LISRest\\Objects.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "3D107988D2641DCC81A1C1B091FC1BD64A12D92C77547855C8D9BF18B27A35C0E64ECF2074AF8390245C334763481B86F18B88069F916154F5FF20626C8B776A"
+		}
+	},
+	"testcases": [
+		{
+			"name": "Logins",
+			"alias": "Logins",
+			"vpath": "",
+			"sstest": "%WORKDIR%TestCases\\Logins\\Test.sstest",
+			"tags": "testcase",
+			"id": "TEZCUYZN",
+			"rep": "%WORKDIR%TestCases\\Logins\\Objects.js",
+			"user": "%WORKDIR%TestCases\\Logins\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "93FDEEBD7201BC8A06E40A768DCDB19119726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF432A14B24569A032A0C2BA4562A84DA2CC"
+		},
+		{
+			"name": "Security Test",
+			"alias": "Security Test",
+			"vpath": "",
+			"sstest": "%WORKDIR%TestCases\\Security Test\\Test.sstest",
+			"tags": "testcase",
+			"id": "P25V8SH1",
+			"rep": "%WORKDIR%TestCases\\Security Test\\Objects.js",
+			"user": "%WORKDIR%TestCases\\Security Test\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "7F5F5BB38EC9648B2B24484B9E050F1619726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43D972CEA891CEE3651D6BE384EB98B8DE"
+		},
+		{
+			"name": "Edit Existing Author",
+			"alias": "Edit Existing Author",
+			"vpath": "Author Management",
+			"sstest": "%WORKDIR%TestCases\\Author Management\\Edit Existing Author\\Test.sstest",
+			"tags": "testcase",
+			"id": "95SEN6DU",
+			"rep": "%WORKDIR%TestCases\\Author Management\\Edit Existing Author\\Objects.js",
+			"user": "%WORKDIR%TestCases\\Author Management\\Edit Existing Author\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "623B7BA5A1B9A0CF0BE914AA4DDA39B819726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86A6E9F0765DBD0AAE0E1E99500B683F76F1A2E09EBE528129FF129C07EB0E6CF1"
+		},
+		{
+			"name": "!Full - Author Management",
+			"alias": "!Full - Author Management",
+			"vpath": "Author Management",
+			"sstest": "%WORKDIR%TestCases\\Author Management\\!Full - Author Management\\Test.sstest",
+			"tags": "testcase,draft,internal,template",
+			"id": "YXVG85SP",
+			"rep": "%WORKDIR%TestCases\\Author Management\\!Full - Author Management\\Objects.js",
+			"user": "%WORKDIR%TestCases\\Author Management\\!Full - Author Management\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "CC3999A96C46265F46B1AE34DF49C18119726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF4347466EFD9FBBB269C28C479DAC813061"
+		},
+		{
+			"name": "!Template - Author Management",
+			"alias": "!Template - Author Management",
+			"vpath": "Author Management",
+			"sstest": "%WORKDIR%TestCases\\Author Management\\!Template - Author Management\\Test.sstest",
+			"tags": "testcase,draft,template",
+			"id": "MB4MA3WI",
+			"rep": "%WORKDIR%TestCases\\Author Management\\!Template - Author Management\\Objects.js",
+			"user": "%WORKDIR%TestCases\\Author Management\\!Template - Author Management\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "6B8192B5D52D0C161FBE2EF458320DD619726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43AF7EB2C2EEE7AEA5DFCDC94FC3EE8B02"
+		},
+		{
+			"name": "Create New Author_01",
+			"alias": "Create New Author",
+			"vpath": "Author Management",
+			"sstest": "%WORKDIR%TestCases\\Author Management\\Create New Author_01\\Test.sstest",
+			"tags": "testcase",
+			"id": "SFW0ABQZ",
+			"rep": "%WORKDIR%TestCases\\Author Management\\Create New Author_01\\Objects.js",
+			"user": "%WORKDIR%TestCases\\Author Management\\Create New Author_01\\User.js",
+			"libraries": [
+				"Web Service",
+				"Web"
+			],
+			"hash": "724A163181214CBAE7F42AF0583251B674A710AB0A21751049AB285E95794EBDA8A0A5136239D86C6A2B7E51B2CC259C829B82D76CB97634F41ECFE7B303680160C1DF5102EF0AA739A379221C042DE0"
+		},
+		{
+			"name": "Create New Book",
+			"alias": "Create New Book",
+			"vpath": "Book Management",
+			"sstest": "%WORKDIR%TestCases\\Book Management\\Create New Book\\Test.sstest",
+			"tags": "testcase",
+			"id": "IWK473VN",
+			"rep": "%WORKDIR%TestCases\\Book Management\\Create New Book\\Objects.js",
+			"user": "%WORKDIR%TestCases\\Book Management\\Create New Book\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "26FD05F83698CC15A3F9F07BAAC1D2E419726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86990E05D508D5CC512A3249127222B5504195B69A4ABB4DCA0846C9B73E49AE38"
+		},
+		{
+			"name": "!Template - Book Management",
+			"alias": "!Template - Book Management",
+			"vpath": "Book Management",
+			"sstest": "%WORKDIR%TestCases\\Book Management\\!Template - Book Management\\Test.sstest",
+			"tags": "testcase,draft,template",
+			"id": "BJYN25AE",
+			"rep": "%WORKDIR%TestCases\\Book Management\\!Template - Book Management\\Objects.js",
+			"user": "%WORKDIR%TestCases\\Book Management\\!Template - Book Management\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "4323AA28303C731BA360E8C4E0F6A7CF19726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF4372507799657620E306AF20E68F80CBFF"
+		},
+		{
+			"name": "Edit Existing Book",
+			"alias": "Edit Existing Book",
+			"vpath": "Book Management",
+			"sstest": "%WORKDIR%TestCases\\Book Management\\Edit Existing Book\\Test.sstest",
+			"tags": "testcase,draft",
+			"id": "WU43VTPP",
+			"rep": "%WORKDIR%TestCases\\Book Management\\Edit Existing Book\\Objects.js",
+			"user": "%WORKDIR%TestCases\\Book Management\\Edit Existing Book\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "6F56D3B0E7ED2DE55FA32BE6C939C4B119726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B8678CD2DAC4DC6317951479D5DA2F0617679BCEAF0436EC3AEA966E723CF65B53C"
+		}
+	],
+	"shared": [
+		{
+			"js": "%WORKDIR%Common.js"
+		},
+		{
+			"data": "%WORKDIR%Dropdowns.xlsx"
+		},
+		{
+			"data": "%WORKDIR%README.md"
+		},
+		{
+			"objects": "%WORKDIR%PageObjects\\LISCommon\\Objects.js"
+		},
+		{
+			"data": "%WORKDIR%Shared\\Logins.xlsx"
+		}
+	],
+	"testsets": [
+		{
+			"id": "30439a50",
+			"name": "Default",
+			"description": "Default test set",
+			"configId": "d49b68bf-4287-4375-8900-b1f3a56fa2fb",
+			"testcases": []
+		}
+	]
+}

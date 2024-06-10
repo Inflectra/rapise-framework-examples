@@ -1,0 +1,24 @@
+{
+	"params": [
+		{
+			"name": "Browser",
+			"defaultValue": "Selenium - Chrome",
+			"type": "browser",
+			"description": "Please, specify browser type to use"
+		},
+		{
+			"name": "Command Interval",
+			"scriptVariableName": "g_commandInterval",
+			"description": "Interval to wait between successive commands in during script execution (g_commandInterval)",
+			"category": "Execution",
+			"defaultValue": 1000,
+			"type": "number"
+		}
+	],
+	"configs": [
+		{
+			"name": "Default",
+			"id": "d49b68bf-4287-4375-8900-b1f3a56fa2fb"
+		}
+	]
+}
