@@ -194,6 +194,46 @@
 			"description": "Default test set",
 			"configId": "d49b68bf-4287-4375-8900-b1f3a56fa2fb",
 			"testcases": []
+		},
+		{
+			"id": "b5d56662",
+			"name": "Full",
+			"description": "",
+			"configId": "d49b68bf-4287-4375-8900-b1f3a56fa2fb",
+			"testcases": [
+				{
+					"id": "SFW0ABQZ"
+				},
+				{
+					"id": "95SEN6DU"
+				},
+				{
+					"id": "IWK473VN"
+				},
+				{
+					"id": "WU43VTPP"
+				},
+				{
+					"id": "TEZCUYZN"
+				},
+				{
+					"id": "P25V8SH1"
+				}
+			]
+		},
+		{
+			"id": "eea7a0ed",
+			"name": "Sanity",
+			"description": "",
+			"configId": "d49b68bf-4287-4375-8900-b1f3a56fa2fb",
+			"testcases": [
+				{
+					"id": "SFW0ABQZ"
+				},
+				{
+					"id": "P25V8SH1"
+				}
+			]
 		}
 	]
 }
